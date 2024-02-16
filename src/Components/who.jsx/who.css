@@ -1,0 +1,28 @@
+.who-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.who-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.who-text.show {
+    max-height: 500px;
+}
